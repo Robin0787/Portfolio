@@ -1,0 +1,30 @@
+.btn {
+  position: relative;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 6px 10px;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: 0.5s all;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: #140233;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
