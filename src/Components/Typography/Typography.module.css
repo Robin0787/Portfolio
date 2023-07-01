@@ -1,0 +1,17 @@
+.caption {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  background: linear-gradient(to right, rgb(247, 172, 172), red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .caption {
+    font-size: large;
+  }
+}
