@@ -32,7 +32,7 @@ function Caption({ children, className, ...props }) {
 function Paragraph({ children, className, ...props }) {
   return (
     <p
-      className={cn("max-w-prose mx-auto md:mx-0 leading-relaxed text-center md:text-justify text-gray-400", className)}
+      className={cn("mx-auto md:mx-0 leading-relaxed text-center md:text-justify text-gray-400", className)}
       {...props}
     >
       {children}
