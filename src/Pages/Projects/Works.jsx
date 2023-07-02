@@ -8,7 +8,7 @@ import bistroBoss from "../../assets/projects/bistroBoss.png";
 import jungleToys from "../../assets/projects/jungleToys.png";
 import lotusLight from "../../assets/projects/lotusLight.png";
 import SectionWrapper from "../../hoc/SectionWrapper";
-import { styles } from "./Styles";
+import { styles } from "../Styles";
 
 const projects = [
   {

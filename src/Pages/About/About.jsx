@@ -43,7 +43,7 @@ const About = () => {
 
     return (
         <section id="about"
-            className="sticky bg-[#060918] text-white inset-1 h-screen w-full flex-col justify-center py-10 mb-20 overflow-hidden">
+            className="sticky bg-[#060918] text-white inset-2 h-screen w-full flex-col justify-center py-10 mb-20 overflow-hidden">
             <article className="md:flex justify-between items-center h-full text-center md:text-left">
                 <div data-aos="fade-right" className="md:w-1/2">
                     <motion.div variants={slideIn('left', 'tween', 5, 1)}>                           

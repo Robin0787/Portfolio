@@ -1,9 +1,12 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from "framer-motion";
 import Container from "../../Components/Container";
-import { Caption, Paragraph } from "../../Components/Typography/Typography";
+import { Caption } from "../../Components/Typography/Typography";
+import { fadeIn, textVariant } from "../../Utils/motion";
+import { styles } from "../Styles";
 
-const Projects = () => {
+const Contact = () => {
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -27,14 +30,27 @@ const Projects = () => {
 
     });
     return (
-        <section id="projects" className="relative bg-[#140233]  text-white pt-20 h-screen w-full overflow-x-hidden ">
+        <section id='contact' className="relative bg-[#140233]  text-white pt-20 h-screen w-full overflow-x-hidden ">
             <Container >
-                <Caption data-aos="fade-down" data-aos-delay={300}>Projects</Caption>
-                <Paragraph data-aos="fade-left" data-aos-delay={400}>Welcome to the projects section of my portfolio, where I showcase my web development work. Here, you'll find a collection of projects I've completed, demonstrating my skills in front-end and back-end development. Each project represents a unique challenge I undertook, utilizing modern technologies, responsive design, and intuitive user experiences. From visually stunning websites to interactive web applications, I invite you to explore my projects and see firsthand the craftsmanship and attention to detail I bring to each endeavor. Whether you're looking for inspiration or seeking a reliable web developer, I hope my portfolio exhibits the passion and dedication I have for creating impactful online experiences. Take a moment to browse through my projects and feel free to reach out if you have any questions or opportunities for collaboration. Enjoy!</Paragraph>
-                <Container />
+                <motion.div variants={textVariant()}>
+                    <Caption>Hit Me Up!</Caption>
+                    <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
+                </motion.div>
+                <div className='w-full flex'>
+                    <motion.p
+                        variants={fadeIn("", "", 0.1, 1)}
+                        className='mt-3 text-gray-300 text-[17px] max-w-3xl leading-[30px] text-justify'
+                    >
+                        Following projects showcases my skills and experience through
+                        real-world examples of my work. Each project is briefly described with
+                        links to code repositories and live demos in it. It reflects my
+                        ability to solve complex problems, work with different technologies,
+                        and manage projects effectively.
+                    </motion.p>
+                </div>
             </Container>
         </section>
     );
 };
 
-export default Projects;
+export default Contact;

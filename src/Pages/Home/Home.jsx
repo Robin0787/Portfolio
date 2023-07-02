@@ -2,18 +2,18 @@
 import Banner from "../../Components/Banner/Banner";
 import Navbar from "../../Components/Navbar/Navbar";
 import About from "../About/About";
-import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 import Works from "../Projects/Works";
 
+
 const Home = () => {
-    
     return (
         <section>
             <Navbar />
             <Banner />
             <About />
             <Works />
-            <Projects />
+            <Contact />
         </section>
     );
 };
