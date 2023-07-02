@@ -9,7 +9,7 @@ const StarWrapper = (Component, idName) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
-        className={`w-full sticky z-10`}
+        className={`w-full overflow-hidden sticky z-10`}
       >
         <span className='hash-span' id={idName}>
           &nbsp;
