@@ -47,13 +47,13 @@ const Contact = () => {
                         Let's Connect! Reach out through the Contact Me section to discuss your web development needs, collaborations, or any inquiries. I'm excited to hear from you and explore how we can work together to bring your ideas to life.
                     </motion.p>
                 </article>
-                <article className='flex flex-col md:flex-row justify-between items-center gap-5'>
+                <article className='flex flex-col md:flex-row justify-between items-center gap-5 p-10'>
                     <div className='md:w-1/2'>
                         <div className='p-10'>
                             <Lottie animationData={contactAnimation} loop={true} />
                         </div>
                     </div>
-                    <div className='md:w-1/2'>
+                    <div className='md:w-1/2 w-full pb-10 md:pb-0'>
                         <ContactForm />
                     </div>
                 </article>
