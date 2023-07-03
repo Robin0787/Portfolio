@@ -1,9 +1,12 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import ContactForm from '../../Components/ContactForm/ContactForm';
 import Container from "../../Components/Container";
 import { Caption } from "../../Components/Typography/Typography";
 import { fadeIn, textVariant } from "../../Utils/motion";
+import contactAnimation from "../../assets/contactAnimation.json";
 import { styles } from "../Styles";
 
 const Contact = () => {
@@ -30,24 +33,30 @@ const Contact = () => {
 
     });
     return (
-        <section id='contact' className="relative bg-[#140233] text-white pt-20 h-screen w-full overflow-x-hidden ">
+        <section id='contact' className="relative bg-[#140233] text-white pt-20 w-full overflow-x-hidden ">
             <Container >
                 <motion.div variants={textVariant()}>
-                    <Caption>Hit Me Up!</Caption>
+                    <Caption>Get in touch</Caption>
                     <h2 className={`${styles.sectionHeadText}`}>Contact.</h2>
                 </motion.div>
-                <div className='w-full flex'>
+                <article className='w-full flex'>
                     <motion.p
                         variants={fadeIn("", "", 0.1, 1)}
                         className='mt-3 text-gray-300 text-[17px] max-w-3xl leading-[30px] text-justify'
                     >
-                        Following projects showcases my skills and experience through
-                        real-world examples of my work. Each project is briefly described with
-                        links to code repositories and live demos in it. It reflects my
-                        ability to solve complex problems, work with different technologies,
-                        and manage projects effectively.
+                        Let's Connect! Reach out through the Contact Me section to discuss your web development needs, collaborations, or any inquiries. I'm excited to hear from you and explore how we can work together to bring your ideas to life.
                     </motion.p>
-                </div>
+                </article>
+                <article className='flex flex-col md:flex-row justify-between items-center gap-5'>
+                    <div className='md:w-1/2'>
+                        <div className='p-10'>
+                            <Lottie animationData={contactAnimation} loop={true} />
+                        </div>
+                    </div>
+                    <div className='md:w-1/2'>
+                        <ContactForm />
+                    </div>
+                </article>
             </Container>
         </section>
     );

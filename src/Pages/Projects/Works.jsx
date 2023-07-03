@@ -7,8 +7,6 @@ import { fadeIn, textVariant } from "../../Utils/motion";
 import bistroBoss from "../../assets/projects/bistroBoss.png";
 import jungleToys from "../../assets/projects/jungleToys.png";
 import lotusLight from "../../assets/projects/lotusLight.png";
-import StarWrapper from "../../hoc/SectionWrapper";
-import Contact from "../Contact/Contact";
 import { styles } from "../Styles";
 
 const projects = [
@@ -182,7 +180,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section id="projects" className="bg-[#140233] sticky inset-1 pt-16 py-10 overflow-hidden">
+    <section id="projects" className="bg-[#140233] py-10 md:py-20 overflow-hidden">
       <Container>
         <motion.div variants={textVariant()}>
           <Caption>My work</Caption>
@@ -206,10 +204,9 @@ const Works = () => {
           ))}
         </div>
       </Container>
-      <Contact></Contact>
     </section>
   );
 };
 
-export default StarWrapper(Works, "projects");
-// export default Works;
+// export default StarWrapper(Works, "projects");
+export default Works;

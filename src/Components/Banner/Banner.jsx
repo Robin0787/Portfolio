@@ -26,7 +26,7 @@ const Banner = () => {
 
     });
     return (
-        <article data-aos="fade-down" className="sticky text-white inset-0 flex h-screen w-full flex-col justify-center py-28"
+        <article data-aos="fade-down" className="text-white flex h-screen w-full flex-col justify-center py-28"
         >
             <GridBackground client:visible />
             <div className="flex flex-col items-center justify-center">

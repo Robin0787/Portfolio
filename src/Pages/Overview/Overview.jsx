@@ -51,20 +51,22 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const Overview = () => {
     return (
-        <section id="skills" className="bg-[#140233] text-white sticky inset-1 lg:h-screen pt-16 py-10 overflow-hidden z-0">
+        <section id="skills" className="bg-[#140233] text-white py-10 md:py-20 overflow-hidden z-0">
             <Container>
                 <motion.div variants={textVariant()}>
                     <Caption>Overview</Caption>
                     <h2 className={styles.sectionHeadText}>Services & Skills</h2>
                 </motion.div>
-                <motion.p
-                    variants={fadeIn("", "", 0.1, 1)}
-                    className='mt-1 text-secondary text-[15px] max-w-3xl text-justify leading-[25px]'
-                >
-                    I showcase my expertise as a web developer. Offering a range of services including responsive web design, dynamic web application development, and proficiency in front-end and back-end technologies. Explore this section to discover how I can bring your web development projects to life.
-                </motion.p>
-                <article className="flex flex-col md:flex-row flex-grow gap-5 mt-5 md:mt-10 justify-between items-center">
-                    <div className='flex flex-row md:flex-col gap-10 '>
+                <div className='w-full flex'>
+                    <motion.p
+                        variants={fadeIn("", "", 0.1, 1)}
+                        className='mt-3 text-gray-300 text-[17px] max-w-3xl leading-[30px] text-justify'
+                    >
+                        I showcase my expertise as a web developer. Offering a range of services including responsive web design, dynamic web application development, and proficiency in front-end and back-end technologies. Explore this section to discover how I can bring your web development projects to life.
+                    </motion.p>
+                </div>
+                <article className="flex flex-col md:flex-row flex-grow gap-5 mt-5 md:mt-8 justify-between items-center">
+                    <div className='flex flex-row md:flex-col gap-10'>
                         {services.map((service, index) => (
                             <ServiceCard key={service.title} index={index} {...service} />
                         ))}
@@ -79,4 +81,5 @@ const Overview = () => {
 };
 
 
+// export default StarWrapper(Overview, 'skills');
 export default Overview;
