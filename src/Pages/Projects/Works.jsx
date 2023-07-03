@@ -7,7 +7,8 @@ import { fadeIn, textVariant } from "../../Utils/motion";
 import bistroBoss from "../../assets/projects/bistroBoss.png";
 import jungleToys from "../../assets/projects/jungleToys.png";
 import lotusLight from "../../assets/projects/lotusLight.png";
-import SectionWrapper from "../../hoc/SectionWrapper";
+import StarWrapper from "../../hoc/SectionWrapper";
+import Contact from "../Contact/Contact";
 import { styles } from "../Styles";
 
 const projects = [
@@ -49,7 +50,7 @@ const projects = [
     description:
       "An e-commerce type website for purchasing and adding toys for kids. Implemented authenticatio and secure storage for user data.",
     features: [
-      'User Register and Login by email & password.', 'Showing and adding toys for sell.', 'Updating and deleting added toys.'
+      'User Registration and Login by email & password.', 'Showing and adding toys for sell.', 'Updating and deleting added toys.'
     ],
     tags: [
       {
@@ -126,7 +127,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary shadow-2xl shadow-gray-800 p-5 rounded-2xl  w-full '
+        className='bg-tertiary shadow-xl shadow-blue-950 p-5 rounded-2xl  w-full '
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -181,7 +182,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section className="bg-[#140233] py-10 overflow-hidden">
+    <section id="projects" className="bg-[#140233] sticky inset-1 pt-16 py-10 overflow-hidden">
       <Container>
         <motion.div variants={textVariant()}>
           <Caption>My work</Caption>
@@ -205,8 +206,10 @@ const Works = () => {
           ))}
         </div>
       </Container>
+      <Contact></Contact>
     </section>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default StarWrapper(Works, "projects");
+// export default Works;

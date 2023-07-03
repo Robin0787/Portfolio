@@ -31,7 +31,7 @@ const Banner = () => {
             <GridBackground client:visible />
             <div className="flex flex-col items-center justify-center">
                 <h1
-                    className="text-center text-5xl sm:text-5xl font-bold leading-tight text-neutrals-50 md:text-7xl md:leading-tight lg:text-8xl lg:leading-tight"
+                    className="text-center text-3xl sm:text-5xl font-bold leading-tight text-neutrals-50 md:text-7xl md:leading-tight lg:text-8xl lg:leading-tight"
                 >
                     Programming<br />and Design<br />from the Future
                 </h1>

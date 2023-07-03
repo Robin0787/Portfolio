@@ -30,7 +30,7 @@ const Contact = () => {
 
     });
     return (
-        <section id='contact' className="relative bg-[#140233]  text-white pt-20 h-screen w-full overflow-x-hidden ">
+        <section id='contact' className="relative bg-[#140233] text-white pt-20 h-screen w-full overflow-x-hidden ">
             <Container >
                 <motion.div variants={textVariant()}>
                     <Caption>Hit Me Up!</Caption>
