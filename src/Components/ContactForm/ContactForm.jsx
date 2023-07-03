@@ -76,7 +76,7 @@ const ContactForm = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="Your Name"
-                            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
+                            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-0 border-0 focus:ring ring-gray-500  duration-300 focus:placeholder:tracking-[4px] font-medium placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
                         />
                     </label>
                     <label className='flex flex-col md:w-1/2'>
@@ -87,7 +87,7 @@ const ContactForm = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="Your Email"
-                            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
+                            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-0 border-0 font-medium focus:ring ring-gray-500 duration-300 focus:placeholder:tracking-[4px] placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
                         />
                     </label>
                 </div>
@@ -99,13 +99,13 @@ const ContactForm = () => {
                         value={form.message}
                         onChange={handleChange}
                         placeholder='What you want to say?'
-                        className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-100 rounded-lg outline-none border-none font-medium placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
+                        className='bg-tertiary py-4 px-6 placeholder:text-secondary text-gray-100 rounded-lg outline-0 border-0 focus:ring ring-gray-500  duration-300 focus:placeholder:tracking-[4px] font-medium placeholder:text-sm placeholder:tracking-[2px] placeholder:font-extralight'
                     />
                 </label>
                 <button
                     disabled={loading}
                     type='submit'
-                    className='text-base sm:text-lg lg:text-lg py-[6px] px-4 hover:bg-gray-300 hover:text-[#140233] border border-gray-400 rounded-lg bg-[#140233] duration-500 text-gray-100 whitespace-pre disabled:cursor-not-allowed 
+                    className='text-base sm:text-lg lg:text-lg py-2 px-4 hover:bg-gray-300 hover:text-[#140233] border border-gray-400 rounded-lg bg-[#140233] duration-500 text-gray-100 whitespace-pre disabled:cursor-not-allowed 
                     disabled:hover:bg-[#140233] disabled:hover:text-white'
                 >
                     {loading ? "Sending..." : "Send"}
