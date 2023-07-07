@@ -45,7 +45,7 @@ const Footer = () => {
                     <h2 className="text-xl">Social</h2>
                     <ul className='list-none space-y-3 text-gray-400 flex flex-col'>
                         <a target='_blank' href="https://www.linkedin.com/in/robin0787/" rel="noreferrer">LinkedIn</a>
-                        <a target='_blank' href="https://web.facebook.com/robin0787" rel="noreferrer">Facebook</a>
+                        <a target='_blank' href="https://www.facebook.com/robinhossen636" rel="noreferrer">Facebook</a>
                         <a target='_blank' href="https://twitter.com/Mohamma19904459" rel="noreferrer">Twitter</a>
                         <a target='_blank' href="https://github.com/Robin0787" rel="noreferrer">GitHub</a>
                     </ul>
