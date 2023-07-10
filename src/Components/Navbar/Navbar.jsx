@@ -88,7 +88,7 @@ function Navbar({ isInitialBackgroundTransparent = false }) {
             </a>
             <button
             onClick={downloadResume}
-                className={`flex justify-center items-center gap-2 text-base sm:text-lg lg:text-lg py-1 px-4 bg-white text-[#140233] border hover:bg-[#140233] duration-500 hover:text-white whitespace-pre`}
+                className={`flex justify-center items-center gap-2 text-base sm:text-lg lg:text-lg py-[6px] sm:py-1 px-4 bg-white text-[#140233] border hover:bg-[#140233] duration-500 hover:text-white whitespace-pre`}
             >
               <HiOutlineDownload size={20} />
                  Resume

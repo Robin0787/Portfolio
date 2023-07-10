@@ -4,7 +4,7 @@ import { Suspense } from 'react';
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
-    const { scene } = useGLTF('./planet/scene.gltf');
+    const { scene } = useGLTF('scene.gltf');
     return (
        <primitive 
         // eslint-disable-next-line react/no-unknown-property
