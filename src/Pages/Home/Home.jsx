@@ -1,6 +1,7 @@
 import { Toaster } from 'react-hot-toast';
 import Banner from "../../Components/Banner/Banner";
 import Navbar from "../../Components/Navbar/Navbar";
+import StarsCanvas from '../../Components/Stars';
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
@@ -11,7 +12,10 @@ const Home = () => {
         <section>
             <Navbar />
             <Banner />
-            <About />
+            <section className='relative'>
+                <About />
+                <StarsCanvas />
+            </section>
             <Overview />
             <Works />
             <Contact />

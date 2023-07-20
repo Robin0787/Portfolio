@@ -10,6 +10,7 @@ import contactAnimation from "../../assets/contactAnimation.json";
 import { styles } from "../Styles";
 
 const Contact = () => {
+    
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -33,7 +34,7 @@ const Contact = () => {
 
     });
     return (
-        <section id='contact' className="relative bg-[#140233] text-white pt-20 w-full overflow-x-hidden ">
+        <section id='contact' className="relative bg-[#140233] text-white pt-20 w-full overflow-x-hidden">
             <Container >
                 <motion.div variants={textVariant()}>
                     <Caption>Get in touch</Caption>
@@ -47,9 +48,9 @@ const Contact = () => {
                         Let's Connect! Reach out through the Contact Me section to discuss your web development needs, collaborations, or any inquiries. I'm excited to hear from you and explore how we can work together to bring your ideas to life.
                     </motion.p>
                 </article>
-                <article className='flex flex-col md:flex-row justify-between items-center gap-5 p-10'>
+                <article className='flex flex-col md:flex-row justify-between items-center gap-5 p-3 sm:p-10'>
                     <div className='md:w-1/2'>
-                        <div className='p-10'>
+                        <div className='sm:p-10 md:p-0 lg:p-10'>
                             <Lottie animationData={contactAnimation} loop={true} />
                         </div>
                     </div>

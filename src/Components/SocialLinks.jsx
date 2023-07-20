@@ -6,6 +6,7 @@ import { FiLinkedin } from 'react-icons/fi';
 
 
 const SocialLinks = () => {
+
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -28,7 +29,8 @@ const SocialLinks = () => {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
-    const classes = `p-3 rounded-full outline outline-1 outline-gray-200 transform hover:scale-110 md:hover:scale-125 hover:outline-blue-500 cursor-pointer duration-300`
+
+    const classes = `p-3 rounded-full outline outline-2 outline-gray-200 transform hover:scale-110 md:hover:scale-125 hover:outline-blue-500 cursor-pointer duration-300`
     return (
         <ul data-aos="fade-left" data-aos-delay={500}  className="flex justify-center md:justify-start items-center gap-3 md:gap-5 xl:gap-8 my-4">
            <a  target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/robin0787/" className={`${classes}`}>

@@ -55,7 +55,7 @@ const Overview = () => {
             <Container>
                 <motion.div variants={textVariant()}>
                     <Caption>Overview</Caption>
-                    <h2 className={styles.sectionHeadText}>Services & Skills</h2>
+                    <h2 className={styles.sectionHeadText}>Services & Skills.</h2>
                 </motion.div>
                 <div className='w-full flex'>
                     <motion.p

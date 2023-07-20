@@ -1,12 +1,12 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
-import EarthCanvas from "../../Components/Earth/Earth";
+// import EarthCanvas from "../../Components/Earth/Earth";
 import SocialLinks from "../../Components/SocialLinks";
 import TypingHeadings from "../../Components/TypingHeadings";
 import { Caption, Paragraph } from "../../Components/Typography/Typography";
 import { slideIn } from "../../Utils/motion";
-
+import my_photo from "../../assets/my_photo.png";
 const About = () => {
 
     AOS.init({
@@ -43,12 +43,14 @@ const About = () => {
 
     return (
         <section id="about"
-            className="bg-[#060918] text-white lg:h-screen w-full flex-col justify-center py-10  overflow-hidden">
-            <article className="md:flex justify-between items-center h-full text-center md:text-left">
+            className=" text-white lg:h-screen w-full flex-col justify-center py-10  overflow-hidden z-0">
+            <article className="md:flex justify-between items-center h-full text-center space-y-5 md:text-left">
                 <div  className="md:w-1/2">
                     <motion.div variants={slideIn('left', 'tween', 0.2, 1)}>
-                        <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[600px]">
-                            <EarthCanvas />
+                        <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[600px] flex justify-center items-center">
+                            {/* <EarthCanvas /> */}
+                            <img src={my_photo} className='rounded-full  h-[280px] w-[280px] 
+                            md:h-[300px] lg:h-[380px] md:w-auto ring-8 ring-gray-100' alt="Developer Photo" />
                         </div>
                     </motion.div>
                 </div>
@@ -59,9 +61,9 @@ const About = () => {
                             client:visible
                             headings={headings}
                         />
-                        <Paragraph>
+                        <Paragraph className={'text-gray-200'}>
                             I am Robin, a passionate Junior Web Developer bringing you
-                            <span className="text-gray-200"> programming and development from the future
+                            <span className="text-white font-bold"> programming and development from the future
                             </span >. My expertise is developing next-level websites and web applications including backend development.
                         </Paragraph>
                         <SocialLinks />
