@@ -30,23 +30,23 @@ const SocialLinks = () => {
 
     });
 
-    const classes = `p-3 rounded-full outline outline-2 outline-gray-200 transform hover:scale-110 md:hover:scale-125 hover:outline-blue-500 cursor-pointer duration-300`
+    const classes = `p-3 rounded-full ring-2 ring-gray-200 transform  cursor-pointer duration-300 group`
     return (
         <ul data-aos="fade-left" data-aos-delay={500}  className="flex justify-center md:justify-start items-center gap-3 md:gap-5 xl:gap-8 my-4">
            <a  target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/robin0787/" className={`${classes}`}>
-            <FiLinkedin size={18} />
+            <FiLinkedin size={18} className="group-hover:scale-125 duration-300"/>
            </a>
            <a target='_blank' rel='noreferrer' href="https://web.facebook.com/robinhossen636" className={`${classes}`}>
-            <FaFacebook size={18} />
+            <FaFacebook size={18} className="group-hover:scale-125 duration-300" />
            </a>
            <a target='_blank' rel='noreferrer' href="https://github.com/Robin0787/" className={`${classes} `}>
-            <BsGithub size={18} />
+            <BsGithub size={18} className="group-hover:scale-125 duration-300" />
            </a>
            <a target='_blank' rel='noreferrer' href="https://twitter.com/robinhossen636"  className={`${classes}`}>
-            <BsTwitter size={18} />
+            <BsTwitter size={18} className="group-hover:scale-125 duration-300" />
            </a>
            <a target='_blank' rel='noreferrer' href="https://discord.gg/Skau2wmZ"  className={`${classes} `}>
-            <BsDiscord size={18}/>
+            <BsDiscord size={18} className="group-hover:scale-125 duration-300"/>
            </a>
         </ul>
     );
