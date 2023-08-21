@@ -19,7 +19,7 @@ const Footer = () => {
                             <FaGithub size={20} /></a>
                         <a target='_blank' rel='noreferrer' href='https://web.facebook.com/robinhossen636/' className='bg-gray-100 duration-300 p-2 cursor-pointer rounded-full text-blue-500 hover:bg-black hover:ring ring-white hover:text-white'>
                             <FaFacebook size={20} /></a>
-                        <a target='_blank' rel='noreferrer' href='https://twitter.com/Mohamma19904459' className='bg-gray-100  duration-300 p-2 cursor-pointer rounded-full text-blue-500 hover:bg-black hover:ring ring-white hover:text-white'>
+                        <a target='_blank' rel='noreferrer' href='https://twitter.com/robinhossen636' className='bg-gray-100  duration-300 p-2 cursor-pointer rounded-full text-blue-500 hover:bg-black hover:ring ring-white hover:text-white'>
                             <FaTwitter size={20} /></a>
                     </div>
                 </div>
