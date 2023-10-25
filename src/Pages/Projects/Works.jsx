@@ -4,18 +4,19 @@ import { Tilt } from "react-tilt";
 import Container from "../../Components/Container";
 import { Caption } from "../../Components/Typography/Typography";
 import { fadeIn, textVariant } from "../../Utils/motion";
-import bistroBoss from "../../assets/projects/bistroBoss.png";
-import jungleToys from "../../assets/projects/jungleToys.png";
+import collegeNavigator from "../../assets/projects/college_navigator.png";
 import lotusLight from "../../assets/projects/lotusLight.png";
+import sherlock from "../../assets/projects/sherlock.png";
 import { styles } from "../Styles";
 
 const projects = [
   {
-    name: "Lotus Light Studio",
+    name: "SHERLOCK",
     description:
-      "An E-learning website that offers a variety of photography classes for students. Has an admin, instructor, and student dashboard.",
+      "An school management website has an admin, instructor, and student dashboard. Admin has the authority to control instructors of the school, instructor has the authority to control students, and student can make request for their results to the school.",
     features: [
-      'Admin, Instructor and Student dashboard.', 'Payment Integration with Stripe.', 'User Authentication using Firebase. '
+      'User Registration and Login by email & password.', 'Login as Instructor or Student',
+      "Admin Dashboard", "Instructor Dashboard", "Student Dashboard", 'Accept login of instructors and students', "Add current students", "Edit and Delete current students"
     ],
     tags: [
       {
@@ -23,8 +24,37 @@ const projects = [
         color: "text-blue-600",
       },
       {
+        name: "Tailwind",
+        color: "text-red-600",
+      },
+      {
+        name: "Firebase",
+        color: "text-yellow-600",
+      },
+      {
         name: "MongoDB",
         color: "text-green-600",
+      },
+      {
+        name: "Express",
+        color: "text-yellow-600",
+      }
+    ],
+    image: sherlock,
+    source_code_link: "https://github.com/Robin0787/School_Management/",
+    live_website_link: "https://school-management-1203a.web.app/"
+  },
+  {
+    name: "Lotus Light Studio",
+    description:
+      "An E-learning website that offers a variety of photography classes for students. Has an admin, instructor, and student dashboard.",
+    features: [
+      'Admin dashboard.', 'Instructor dashboard.', 'Student dashboard.', "Change the role of instructors and students", 'Make Payment with Stripe.', 'User Authentication using Firebase. ', "Add and Delete preferred classes"
+    ],
+    tags: [
+      {
+        name: "React",
+        color: "text-blue-600",
       },
       {
         name: "Tailwind",
@@ -33,6 +63,10 @@ const projects = [
       {
         name: "Express",
         color: "text-yellow-600",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-600",
       },
       {
         name: "Stripe",
@@ -44,11 +78,11 @@ const projects = [
     live_website_link: "https://lotus-light-studio.web.app/"
   },
   {
-    name: "Jungle Toys",
+    name: "College Navigator",
     description:
-      "An e-commerce type website for purchasing and adding toys for kids. Implemented authenticatio and secure storage for user data.",
+      "A full-stack website for taking admission on different colleges. Students can book a admission seat my filling up a booking from",
     features: [
-      'User Registration and Login by email & password.', 'Showing and adding toys for sell.', 'Updating and deleting added toys.'
+      'User Registration and Login by email & password.', 'Can Search colleges by their name.', 'Can book seat for admission.', "Can write a review on specific college."
     ],
     tags: [
       {
@@ -56,55 +90,88 @@ const projects = [
         color: "text-blue-600",
       },
       {
-        name: "MongoDB",
-        color: "text-green-600",
-      },
-      {
         name: "Tailwind",
         color: "text-sky-600",
       },
       {
-        name: "Express",
+        name: "Firebase",
         color: "text-yellow-600",
-      }
-    ],
-    image: jungleToys,
-    source_code_link: "https://github.com/Robin0787/Jungle-Toys",
-    live_website_link: "https://jungle-toys.web.app/"
-  },
-  {
-    name: "Bistro Boss",
-    description:
-      "A full-stack website that offers multiple food items for users. Admin dashboard for admin an user dashboard for user. ",
-    features: [
-      'Admin, and User dashboard.', 'Payment Integration with Stripe.', 'User Authentication using Firebase'
-    ],
-    tags: [
-      {
-        name: "React",
-        color: "text-blue-600",
-      },
-      {
-        name: "MongoDB",
-        color: "text-green-600",
-      },
-      {
-        name: "Tailwind",
-        color: "text-sky-600",
       },
       {
         name: "Express",
         color: "text-yellow-600",
       },
       {
-        name: "Stripe",
-        color: "text-red-500",
+        name: "MongoDB",
+        color: "text-green-600",
       }
     ],
-    image: bistroBoss,
-    source_code_link: "https://github.com/Robin0787/Bistro-boss",
-    live_website_link: "https://bistro-boss-9ee8c.web.app/"
-  },
+    image: collegeNavigator,
+    source_code_link: "https://github.com/Robin0787/College-Navigator",
+    live_website_link: "https://college-navigator-101.web.app/"
+  }
+  // {
+  //   name: "Bistro Boss",
+  //   description:
+  //     "A full-stack website that offers multiple food items for users. Admin dashboard for admin an user dashboard for user. ",
+  //   features: [
+  //     'Admin, and User dashboard.', 'Payment Integration with Stripe.', 'User Authentication using Firebase'
+  //   ],
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "text-blue-600",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "text-green-600",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       color: "text-sky-600",
+  //     },
+  //     {
+  //       name: "Express",
+  //       color: "text-yellow-600",
+  //     },
+  //     {
+  //       name: "Stripe",
+  //       color: "text-red-500",
+  //     }
+  //   ],
+  //   image: bistroBoss,
+  //   source_code_link: "https://github.com/Robin0787/Bistro-boss",
+  //   live_website_link: "https://bistro-boss-9ee8c.web.app/"
+  // },
+  // {
+  //   name: "Jungle Toys",
+  //   description:
+  //     "An e-commerce type website for purchasing and adding toys for kids. Implemented authenticatio and secure storage for user data.",
+  //   features: [
+  //     'User Registration and Login by email & password.', 'Showing and adding toys for sell.', 'Updating and deleting added toys.'
+  //   ],
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "text-blue-600",
+  //     },
+  //     {
+  //       name: "MongoDB",
+  //       color: "text-green-600",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       color: "text-sky-600",
+  //     },
+  //     {
+  //       name: "Express",
+  //       color: "text-yellow-600",
+  //     }
+  //   ],
+  //   image: jungleToys,
+  //   source_code_link: "https://github.com/Robin0787/Jungle-Toys",
+  //   live_website_link: "https://jungle-toys.web.app/"
+  // },
 ];
 
 const ProjectCard = ({
@@ -131,7 +198,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-fill rounded-2xl object-center'
           />
           <div className='absolute inset-0 flex justify-end gap-0  card-img_hover'>
             <div
