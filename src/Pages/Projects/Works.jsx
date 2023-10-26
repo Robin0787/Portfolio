@@ -13,7 +13,7 @@ const projects = [
   {
     name: "SHERLOCK",
     description:
-      "An school management website has an admin, instructor, and student dashboard. Admin has the authority to control instructors of the school, instructor has the authority to control students, and student can make request for their results to the school.",
+      "A school management website has an admin, instructor, and student dashboard. Admin has the authority to control instructors of the school, instructor can control students, and students can make requests for their results to the school.",
     features: [
       'User Registration and Login by email & password.', 'Login as Instructor or Student',
       "Admin Dashboard", "Instructor Dashboard", "Student Dashboard", 'Accept login of instructors and students', "Add current students", "Edit and Delete current students"
@@ -80,7 +80,7 @@ const projects = [
   {
     name: "College Navigator",
     description:
-      "A full-stack website for taking admission on different colleges. Students can book a admission seat my filling up a booking from",
+      "A full-stack website for taking admission to different colleges. Students can book an admission seat by filling out a booking form.",
     features: [
       'User Registration and Login by email & password.', 'Can Search colleges by their name.', 'Can book seat for admission.', "Can write a review on specific college."
     ],

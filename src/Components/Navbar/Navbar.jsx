@@ -38,10 +38,10 @@ function Navbar({ isInitialBackgroundTransparent = false }) {
     isMobileMenuOpen
 
     function downloadResume () {
-      const url = "/public/resume.pdf";
+      const url = "/public/Robin_Hossen_Resume.pdf";
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = "Resume.pdf";
+      anchor.download = "Robin_Hossen_Resume.pdf";
       anchor.click();
     }
 
