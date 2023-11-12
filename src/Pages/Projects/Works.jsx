@@ -194,13 +194,13 @@ const ProjectCard = ({
         }}
         className='bg-tertiary shadow-xl shadow-blue-950 p-5 rounded-2xl  w-full '
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] img-wrapper'>
           <img
             src={image}
             alt='project_image'
-            className='w-full h-full object-fill rounded-2xl object-center'
+            className='w-full h-full object-cover rounded-lg object-center'
           />
-          <div className='absolute inset-0 flex justify-end gap-0  card-img_hover'>
+          <div className='absolute inset-0 flex justify-end gap-0 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className=' p-2 rounded-full cursor-pointer'

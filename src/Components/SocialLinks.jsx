@@ -33,7 +33,7 @@ const SocialLinks = () => {
     const classes = `p-3 rounded-full ring-2 ring-gray-200 transform  cursor-pointer duration-300 group`
     return (
         <ul data-aos="fade-left" data-aos-delay={500}  className="flex justify-center md:justify-start items-center gap-3 md:gap-5 xl:gap-8 my-4">
-           <a  target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/robin0787/" className={`${classes}`}>
+           <a  target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/robin-web-dev/" className={`${classes}`}>
             <FiLinkedin size={18} className="group-hover:scale-125 duration-300"/>
            </a>
            <a target='_blank' rel='noreferrer' href="https://web.facebook.com/robinhossen636" className={`${classes}`}>
