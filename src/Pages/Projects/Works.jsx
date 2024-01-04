@@ -7,6 +7,7 @@ import { fadeIn, textVariant } from "../../Utils/motion";
 import collegeNavigator from "../../assets/projects/college_navigator.png";
 import lotusLight from "../../assets/projects/lotusLight.png";
 import sherlock from "../../assets/projects/sherlock.png";
+import siteSaver from "../../assets/projects/site_saver.png";
 import { styles } from "../Styles";
 
 const projects = [
@@ -109,69 +110,36 @@ const projects = [
     image: collegeNavigator,
     source_code_link: "https://github.com/Robin0787/College-Navigator",
     live_website_link: "https://college-navigator-101.web.app/"
-  }
-  // {
-  //   name: "Bistro Boss",
-  //   description:
-  //     "A full-stack website that offers multiple food items for users. Admin dashboard for admin an user dashboard for user. ",
-  //   features: [
-  //     'Admin, and User dashboard.', 'Payment Integration with Stripe.', 'User Authentication using Firebase'
-  //   ],
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "text-blue-600",
-  //     },
-  //     {
-  //       name: "MongoDB",
-  //       color: "text-green-600",
-  //     },
-  //     {
-  //       name: "Tailwind",
-  //       color: "text-sky-600",
-  //     },
-  //     {
-  //       name: "Express",
-  //       color: "text-yellow-600",
-  //     },
-  //     {
-  //       name: "Stripe",
-  //       color: "text-red-500",
-  //     }
-  //   ],
-  //   image: bistroBoss,
-  //   source_code_link: "https://github.com/Robin0787/Bistro-boss",
-  //   live_website_link: "https://bistro-boss-9ee8c.web.app/"
-  // },
-  // {
-  //   name: "Jungle Toys",
-  //   description:
-  //     "An e-commerce type website for purchasing and adding toys for kids. Implemented authenticatio and secure storage for user data.",
-  //   features: [
-  //     'User Registration and Login by email & password.', 'Showing and adding toys for sell.', 'Updating and deleting added toys.'
-  //   ],
-  //   tags: [
-  //     {
-  //       name: "React",
-  //       color: "text-blue-600",
-  //     },
-  //     {
-  //       name: "MongoDB",
-  //       color: "text-green-600",
-  //     },
-  //     {
-  //       name: "Tailwind",
-  //       color: "text-sky-600",
-  //     },
-  //     {
-  //       name: "Express",
-  //       color: "text-yellow-600",
-  //     }
-  //   ],
-  //   image: jungleToys,
-  //   source_code_link: "https://github.com/Robin0787/Jungle-Toys",
-  //   live_website_link: "https://jungle-toys.web.app/"
-  // },
+  },
+  {
+    name: "Site Saver",
+    description:
+      "A full-stack website for saving your favorite websites for further use.",
+    features: [
+      'Creating categories', "Adding websites", "Deleting categories", "Deleting websites"
+    ],
+    tags: [
+      {
+        name: "React",
+        color: "text-blue-600",
+      },
+      {
+        name: "Tailwind",
+        color: "text-sky-600",
+      },
+      {
+        name: "Express",
+        color: "text-yellow-600",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-600",
+      }
+    ],
+    image: siteSaver,
+    source_code_link: "https://site-saver.netlify.app/",
+    live_website_link: "https://site-saver.netlify.app/"
+  },
 ];
 
 const ProjectCard = ({
